@@ -5,7 +5,6 @@ def print_juggler(n):
     a = n
     # Print the first term
     print(a, end=" ")
-
     # Calculate terms until the last term is not 1
     while a != 1:
         # Check if the previous term is even or odd
@@ -18,7 +17,6 @@ def print_juggler(n):
 
         print(b, end=" ")
         a = b
-
 def main():
     fileName = input("Enter the name of the input file: ")
     with open(fileName, "r") as inputFile:
@@ -27,6 +25,5 @@ def main():
             num = int(line.strip())
             print_juggler(num)  # Generate and print Juggler Sequence for each number
             print()
-
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
